@@ -181,3 +181,60 @@
   margin: 0.5rem 0rem;
   text-transform: uppercase;
 }
+
+/* Thesis */
+
+.banner4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.banner4 h2 {
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.exhibit .urban {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.exhibit .urban video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.exhibit .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.exhibit .right .thesis {
+  display: flex;
+  align-items: center;
+}
+
+.exhibit .right .thesis img {
+  display: block;
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibit .right .thesis .text {
+  width: 65%;
+  padding-right: 1.5rem;
+}
