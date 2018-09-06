@@ -214,7 +214,7 @@
   margin: 0.5rem 0rem;
 }
 
-.banner2 .coursemobile {
+.banner2 .coursemob {
   display: none;
 }
 
@@ -222,7 +222,38 @@
   .banner2 .left, .banner2 .coursedetails {
     display: none;
   }
-  
+
+.banner2 .coursemob {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.banner2 .coursemob .detailsmob:last-child {
+  margin-bottom: 0;
+}
+
+.coursemob .detailsmob {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ margin-bottom: 4rem;
+}
+
+.coursemob .detailsmob img {
+  width: 100%;
+  height: auto;
+}
+
+.coursemob .detailsmob .textmob {
+ padding: 0 1rem;
+}
+
+.coursemob .detailsmob .textmob p:last-child{
+  margin-bottom: 0;
+}
+
 }
 
 /* Courses */
