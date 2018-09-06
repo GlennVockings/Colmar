@@ -265,7 +265,7 @@
   align-items: center;
 }
 
-.banner3 h2 {
+.banner3 h1 {
   display: block;
   text-align: center;
   margin: 2rem 0;
@@ -301,6 +301,41 @@
 .courses .text .upper {
   margin: 0.5rem 0rem;
   text-transform: uppercase;
+}
+
+.banner3 .listmob {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner3 .courselist {
+    display: none;
+  }
+
+  .banner3 {
+  display: flex;
+  flex-direction: column;
+  }
+
+.banner3 h1 {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+}
+
+.banner3 .listmob {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner3 .listmob h2 {
+  padding: 1rem 0 1.5rem 1rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
 }
 
 /* Thesis */
