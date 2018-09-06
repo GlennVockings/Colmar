@@ -145,10 +145,16 @@
   margin: 2rem 0;
 }
 
+.banner .right h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
 .banner .right p {
   display: block;
   width: 100%;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 }
@@ -206,6 +212,17 @@
 
 .details .text p {
   margin: 0.5rem 0rem;
+}
+
+.banner2 .coursemobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner2 .left, .banner2 .coursedetails {
+    display: none;
+  }
+  
 }
 
 /* Courses */
