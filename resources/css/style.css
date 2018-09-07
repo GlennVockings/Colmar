@@ -1,16 +1,28 @@
 /* Universal Styles */
+HTML {
+  font-size: 16px
+}
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 
+h2 {
+  font-size: 1.5rem;
+}
 
+body {
+  font-family: 'Josefin sans';
+}
 
 /* Header */
-
 .header {
- display: flex;
- height: 4rem;
- width: auto;
- justify-content: space-between;
- align-items: center;
+  display: flex;
+  height: 4rem;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .logo {
@@ -48,42 +60,41 @@
 }
 
 @media only screen and (max-width: 480px) {
-.header .desktop, .header .logo {
+  .header .desktop, .header .logo {
     display: none;
   }
 
-.mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-}
+  .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+  }
 
-.mobile ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  align-items: center;
-  padding: 0;
-  height: auto;
-}
+  .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    height: auto;
+  }
 
-.mobile ul li {
-  padding: 0.5rem;
-}
-
+  .mobile ul li {
+    padding: 0.5rem;
+  }
 }
 
 /* Banner */
-
 .banner {
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #79def7;
 }
 
 .banner .left {
@@ -103,65 +114,72 @@
 
 .banner .right {
   display: block;
-  width: 37.5%;
+  width: 40%;
   margin-right: 1.5rem;
-  margin-left: 2.5rem;
+}
+
+.banner .right h1 {
+  font-size: 2rem;
+}
+
+.banner .right h2 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
 .banner .right p {
   display: block;
   text-align: center;
   padding: 0.5rem 0rem;
-  width: 75%;
+  width: 80%;
+  background-color: #285f6d;
+  color: white;
 }
 
 @media only screen and (max-width: 480px) {
-.banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-.banner .left {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+  .banner .left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
-.banner .left img {
-  width: 100%
-  height: auto;
-}
+  .banner .left img {
+    width: 100% height: auto;
+  }
 
-.banner .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 1rem 2rem 1rem;
-}
+  .banner .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 1rem 2rem 1rem;
+  }
 
-.banner .right h1 {
-  margin: 2rem 0;
-  margin-left: 1rem;
-}
+  .banner .right h1 {
+    margin: 2rem 0;
+    margin-left: 1rem;
+  }
 
-.banner .right h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  margin-left: 1rem;
-}
+  .banner .right h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
 
-.banner .right p {
-  display: block;
-  width: 100%;
-  margin-top: 0;
-}
-
+  .banner .right p {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 /* information */
-
 .banner2 {
   display: flex;
   align-items: flex-start;
@@ -182,7 +200,8 @@
 }
 
 .left h2 {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 700;
 }
 
 .coursedetails {
@@ -198,12 +217,12 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
+  padding: 1rem;
 }
 
 .details img {
   width: 35%;
   height: auto;
-  padding: 1rem;
 }
 
 .details .text {
@@ -211,7 +230,13 @@
   padding: 1rem;
 }
 
+.details .text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .details .text p {
+  font-size: 0.9rem;
   margin: 0.5rem 0rem;
 }
 
@@ -219,59 +244,62 @@
   display: none;
 }
 
+.blue {
+  background-color: #79def7;
+}
+
 @media only screen and (max-width: 480px) {
   .banner2 .left, .banner2 .coursedetails {
     display: none;
   }
 
-.banner2 .coursemob {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 1rem 2rem 1rem;
-  width: 100%;
-}
+  .banner2 .coursemob {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 2rem 1rem;
+    width: 100%;
+  }
 
-.banner2 .coursemob .detailsmob:last-child {
-  margin-bottom: 0;
-}
+  .banner2 .coursemob .detailsmob:last-child {
+    margin-bottom: 0;
+  }
 
-.coursemob .detailsmob {
- display: flex;
- flex-direction: column;
- width: 100%;
- margin-bottom: 4rem;
-}
+  .coursemob .detailsmob {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 
-.coursemob .detailsmob img {
-  width: 100%;
-  height: auto;
-}
+  .coursemob .detailsmob img {
+    width: 100%;
+    height: auto;
+  }
 
-.coursemob .detailsmob .textmob {
- padding: 0 1rem;
-}
+  .coursemob .detailsmob .textmob {
+    padding: 0 1rem;
+  }
 
-.coursemob .detailsmob .textmob h3 {
-  margin-top: 1rem;
-}
+  .coursemob .detailsmob .textmob h3 {
+    margin-top: 1rem;
+  }
 
-.coursemob .detailsmob .textmob p {
-  margin-top: 0.5rem;
-}
+  .coursemob .detailsmob .textmob p {
+    margin-top: 0.5rem;
+  }
 
-.coursemob .detailsmob .textmob p:last-child{
-  margin-bottom: 0;
-}
-
+  .coursemob .detailsmob .textmob p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Courses */
-
 .banner3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #a0ecff;
 }
 
 .banner3 h1 {
@@ -292,9 +320,10 @@
 .courses {
   width: 25%;
   margin: 0rem 1rem 2rem 1rem;
+  background-color: #ffffff;
 }
 
-.courses img{
+.courses img {
   height: auto;
   max-width: 100%;
 }
@@ -303,8 +332,17 @@
   padding: 1rem 1rem 1.5rem 1rem;
 }
 
+.courses .text h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.courses .text p {
+  font-weight: 300;
+}
+
 .courses .text p, .courses .text h3 {
-   margin: 0;
+  margin: 0;
 }
 
 .courses .text .upper {
@@ -343,7 +381,6 @@
 }
 
 /* Thesis */
-
 .banner4 {
   display: flex;
   flex-direction: column;
@@ -352,7 +389,7 @@
   width: 100%;
 }
 
-.banner4 h2 {
+.banner4 h1 {
   text-align: center;
   display: block;
   margin: 2rem auto;
@@ -366,13 +403,22 @@
 
 .exhibit .urban {
   width: 60%;
-  margin: 2rem 1.5rem;
+  margin: 0 1.5rem 2rem 1.5rem;
 }
 
 .exhibit .urban video {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.exhibit .urban .text {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.exhibit .urban .text p {
+  margin-top: 0.8rem;
 }
 
 .exhibit .right {
@@ -385,53 +431,56 @@
 .exhibit .right .thesis {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .exhibit .right .thesis img {
   display: block;
   width: 35%;
   height: auto;
-  padding: 1rem;
 }
 
 .exhibit .right .thesis .text {
   width: 65%;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+
+.exhibit .right .thesis .text p {
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 480px) {
- .banner4 .exhibit .right, .banner4 .exhibit .urban h3,
- .banner4 .exhibit .urban p {
-   display: none;
- }
 
-.banner4 h2 {
-  display: block;
-  margin: 2rem 0 1rem 0;
-  width: 100%;
-}
+  .banner4 .exhibit .right, .banner4 .exhibit .urban h3,
+  .banner4 .exhibit .urban p {
+    display: none;
+  }
 
- .banner4 .exhibit {
-  width: 100%;
- }
+  .banner4 h2 {
+    display: block;
+    margin: 2rem 0 1rem 0;
+    width: 100%;
+  }
 
- .banner4 .exhibit .urban {
-  width: 100%;
-  padding: 0;
-  margin: 0;
- }
+  .banner4 .exhibit {
+    width: 100%;
+  }
 
-.banner4 .exhibit .urban video {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
-}
+  .banner4 .exhibit .urban {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
+  .banner4 .exhibit .urban video {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
 }
 
 /* Footer */
-
 footer {
   display: flex;
   width: 100%;
@@ -467,18 +516,18 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
- footer .terms {
-   display: none;
- }
+  footer .terms {
+    display: none;
+  }
 
- footer .copyright {
-   width: 100%;
-   padding: 0;
-   margin: 0;
-   text-align: center;
- }
+  footer .copyright {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
 
- footer .copyright p {
-   margin: 1rem 0;
- }
+  footer .copyright p {
+    margin: 1rem 0;
+  }
 }
