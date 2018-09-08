@@ -185,6 +185,7 @@ body {
   background-color: #285f6d;
   color: white;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .banner .right a:hover {
@@ -262,6 +263,8 @@ body {
   width: 60%;
   padding: 2rem 1.5rem;
   color: #002a35;
+  border-right: 1px solid #c6c6c6;
+  margin-top: 1rem;
 }
 
 .left img {
@@ -280,7 +283,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 40%;
-  padding: 1rem 1.5rem 2rem 0rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
 }
 
 .details {
@@ -423,6 +427,18 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   color: #002a35;
+}
+
+.courses:nth-child(3n+1) {
+  box-shadow: -0.5rem 0.5rem 2px 1px #87cadb;
+}
+
+.courses:nth-child(3n+2) {
+  box-shadow: 0 0.5rem 2px 1px #87cadb;
+}
+
+.courses:nth-child(3n+3) {
+  box-shadow: 0.5rem 0.5rem 2px 1px #87cadb;
 }
 
 .courses:hover {
