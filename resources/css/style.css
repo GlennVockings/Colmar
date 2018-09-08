@@ -55,6 +55,11 @@ body {
   padding-right: 1rem;
 }
 
+.desktop ul li a {
+  text-decoration: none;
+  color: #002a35;
+}
+
 .mobile {
   display: none;
 }
@@ -128,16 +133,17 @@ body {
   font-size: 1.5rem;
 }
 
-.banner .right p {
+.banner .right a {
   display: block;
   text-align: center;
   padding: 0.5rem 0rem;
   width: 80%;
   background-color: #285f6d;
   color: white;
+  text-decoration: none;
 }
 
-.banner .right p:hover {
+.banner .right a:hover {
  background-color: #022b35;
  letter-spacing: .1rem;
  transition: all, 3s, ease-in-out, 1s;
@@ -179,10 +185,11 @@ body {
     margin-left: 1rem;
   }
 
-  .banner .right p {
+  .banner .right a {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-top: 0;
+    margin-left: 1rem;
   }
 }
 
@@ -229,12 +236,6 @@ body {
   color: #002a35;
 }
 
-.details:hover {
-  background-color: #285f6d;
-  color: #ffffff;
-  transition: all 1s linear 0;
-}
-
 .details img {
   width: 35%;
   height: auto;
@@ -255,9 +256,14 @@ body {
   margin: 0.5rem 0rem;
 }
 
-.details .text p:last-child:hover {
+.details .text a {
+  text-decoration: none;
+  color: #002a35;
+}
+
+.details .text a:last-child:hover {
   text-transform: uppercase;
-  transition: all, 1s linear 1s;
+  transition: All 1s linear 1s;
 }
 
 .banner2 .coursemob {
@@ -285,6 +291,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin-bottom: 4rem;
+    color: #002a35;
   }
 
   .coursemob .detailsmob img {
@@ -298,14 +305,19 @@ body {
 
   .coursemob .detailsmob .textmob h3 {
     margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
 
   .coursemob .detailsmob .textmob p {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .coursemob .detailsmob .textmob p:last-child {
+  .coursemob .detailsmob .textmob a {
     margin-bottom: 0;
+    text-decoration: none;
+    color: #08a1c9;
   }
 }
 
@@ -337,6 +349,7 @@ body {
   width: 25%;
   margin: 0rem 1rem 2rem 1rem;
   background-color: #ffffff;
+  text-decoration: none;
   color: #002a35;
 }
 
@@ -391,9 +404,9 @@ body {
   }
 
   .banner3 .courselist .courses {
-    width: 100%;
+    width: 90%;
     padding: 0;
-    margin: 0 1rem 0.5rem 1rem;
+    margin: 0 1rem 0.5rem 2rem;
   }
 
   .banner3 .courselist .courses .text {
@@ -462,6 +475,7 @@ body {
   align-items: center;
   padding: 1rem;
   color: #002a35;
+  text-decoration: none;
 }
 
 .exhibit .right .thesis:hover {
@@ -479,6 +493,11 @@ body {
 .exhibit .right .thesis .text {
   width: 65%;
   padding-left: 1rem;
+}
+
+.exhibit .right .thesis .text h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .exhibit .right .thesis .text p {
@@ -575,7 +594,7 @@ footer {
   }
 
   footer .copyright {
-    width: 100%;
+    width: 40%;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -583,5 +602,9 @@ footer {
 
   footer .copyright p {
     margin: 1rem 0;
+  }
+
+  footer .social {
+    width: 60%;
   }
 }
