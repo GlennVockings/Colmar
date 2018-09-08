@@ -548,6 +548,7 @@ body {
   padding: 1rem;
   color: #002a35;
   text-decoration: none;
+  width: 100%;
 }
 
 .exhibit .right .thesis:hover {
@@ -576,7 +577,7 @@ body {
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
   .banner4 .exhibit .right, .banner4 .exhibit .urban h3,
   .banner4 .exhibit .urban p {
