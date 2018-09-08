@@ -39,6 +39,11 @@ body {
   padding-left: 0.25rem;
 }
 
+.header .logo .colmar {
+  font-weight: 700;
+  color: #002a35;
+}
+
 .header .desktop {
   margin-right: 1.5rem;
   display: flex;
@@ -163,15 +168,15 @@ body {
   }
 
   .banner .left img {
-    width: 100% height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .banner .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0 1rem 2rem 1rem;
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    padding-bottom: 2rem;
   }
 
   .banner .right h1 {
@@ -187,9 +192,9 @@ body {
 
   .banner .right a {
     display: block;
-    width: 90%;
-    margin-top: 0;
-    margin-left: 1rem;
+    min-width: 90%;
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -234,6 +239,12 @@ body {
   width: 100%;
   padding: 1rem;
   color: #002a35;
+  background-color: #ffffff;
+}
+
+.details:hover {
+  background-color: #ddf8ff;
+  transition: all 5ms ease-in 1ms;
 }
 
 .details img {
@@ -399,14 +410,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    padding: 0;
   }
 
   .banner3 .courselist .courses {
-    width: 90%;
+    min-width: 90%;
     padding: 0;
-    margin: 0 1rem 0.5rem 2rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
   }
 
   .banner3 .courselist .courses .text {
