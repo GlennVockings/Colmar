@@ -636,16 +636,22 @@ body {
 /* Footer */
 footer {
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
   background-color: #002a35;
+}
+
+.socialmob {
+  display: none;
 }
 
 .copyright {
   margin: 0 1.5rem;
   width: 33%;
   color: #ffffff;
+  font-size: 0.9rem;
 }
 
 .copyright p {
@@ -673,6 +679,7 @@ footer {
   width: 33%;
   align-items: flex-start;
   color: #ffffff;
+  font-size: 0.9rem;
 }
 
 .terms ul {
@@ -687,7 +694,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  footer .terms {
+  footer .terms, footer .social {
     display: none;
   }
 
@@ -702,7 +709,14 @@ footer {
     margin: 1rem 0;
   }
 
-  footer .social {
+  footer .socialmob {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
+  }
+
+  .socialmob .fa {
+   color: #ffffff;
   }
 }
